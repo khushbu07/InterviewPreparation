@@ -31,7 +31,8 @@ public class PrimeNumbers {
 		
 		public static void main(String[] args) {
 			
-		System.out.println(" 2 isPrime no.: " +isPrimeNumber(2));
+
+
 			
 		System.out.println(" 5 isPrime no.: " +isPrimeNumber(5));
 		
