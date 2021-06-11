@@ -5,16 +5,16 @@ public class Fis {
 		
 		int[] a = {1,4,3,9,4,5,1,2,7,4,5,1,10,7,1};
 		
-		int length=a.length;
 		
-		for(int i=0;i<=length-1;i++) {
-			
-			int sum= a[0]+a[i];
-			
-			System.out.println(sum);
-			}
-		
-		
+		int d=1,b=2;
+		int c[]=new int[100] ;
+
+		for(int i=1;i<=10;i++) {
+		c[i]= a[0]+a[i];
+		System.out.println(c[i]);
+
+		}
+		}
 		
 		
 		
@@ -22,4 +22,4 @@ public class Fis {
 
 	}
 
-}
+
