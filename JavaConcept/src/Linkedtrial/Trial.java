@@ -10,8 +10,10 @@ public class Trial {
 		obj[4]="QA";
 		
 		System.out.println(obj.length);
-		//System.out.println(obj.size());
-
+		
+		int a[]= {1,2,3,4};
+		
+		System.out.println(a.length);
 	}
 
 }
