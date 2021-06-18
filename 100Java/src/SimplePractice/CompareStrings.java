@@ -1,6 +1,6 @@
 package SimplePractice;
 
-public class Compare {
+public class CompareStrings {
 	
 		public static void main(String args[]){ 
 		String s1="hello"; 
