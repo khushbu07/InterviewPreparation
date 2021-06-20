@@ -7,7 +7,7 @@ public class StaticBlockExample {
 		 }
 		 static {
 		 String os = System.getenv("OS");
-		 if (os.equals("Windows_NT") != true) {
+		 if (os.equals("Windows_NT")== true) {
 		 System.exit(1);
 		 }
 		 }
