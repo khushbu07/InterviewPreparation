@@ -2,6 +2,7 @@
 
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class RerunFailed {
@@ -20,5 +21,6 @@ public class RerunFailed {
 	public void test3() {
 		Assert.assertTrue(true);
 		System.out.println("Execute the test3");
+		 Reporter.log("We used Google Chrome Ver 80 for this test");
 	}
 }
