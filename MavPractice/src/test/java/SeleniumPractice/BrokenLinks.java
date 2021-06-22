@@ -5,6 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -25,7 +26,7 @@ public class BrokenLinks {
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 
-		links.addAll(driver.findElements(By.tagName("img")));
+		Collections.addAll(driver.findElements(By.tagName("img")));
 
 		System.out.println("Size of all list " + links.size());
 
