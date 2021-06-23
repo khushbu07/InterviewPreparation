@@ -16,7 +16,10 @@ public class ArrayListConcpt {
 		System.out.println(ar);
 		
 		ar.add(12);
+		ar.add(121);
 		
+		System.out.println(ar);
+		System.out.println(ar.size());
 		System.out.println("Lower Index " +0);
 		System.out.println("Higher Index " + (ar.size()-1));
 		
