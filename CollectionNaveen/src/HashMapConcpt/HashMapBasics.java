@@ -8,7 +8,7 @@ import java.util.Set;
 public class HashMapBasics {
 
 	public static void main(String[] args) {
-         //hashmap is not thread safe -unsnchronized
+         //hashmap is not thread safe -unsynchronized
 		//no order and indexing
       HashMap<String,String> Capitalmap=new HashMap<String,String>();
       Capitalmap.put("USA","NY");
@@ -19,12 +19,13 @@ public class HashMapBasics {
       Capitalmap.put(null,"pune"); //store multiple null value but only one null key
       Capitalmap.put("Russia",null);
       Capitalmap.put("France",null);
+      Capitalmap.put("France","rrt");
       
       System.out.println(Capitalmap.get("UP"));//if key is repeated then it overriden value,not giviing error
       System.out.println(Capitalmap.get("BN"));//if key is not available ,give null
       System.out.println(Capitalmap.get("France"));
       System.out.println(Capitalmap.get(null));
-      System.out.println(Capitalmap.remove("France"));
+      //System.out.println(Capitalmap.remove("France"));
       
       //iterator :over the key by using keyset
     Iterator<String> it=  Capitalmap.keySet().iterator();
@@ -39,7 +40,7 @@ public class HashMapBasics {
     System.out.println("===========================");
     
     
-    //2. iterator: over the set(pair)
+    //2. iterator: over the set(pair) using entry set
     
     Iterator<Entry<String, String>> it1=Capitalmap.entrySet().iterator();
     
